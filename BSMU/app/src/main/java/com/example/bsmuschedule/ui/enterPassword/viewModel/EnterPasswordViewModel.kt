@@ -42,9 +42,7 @@ class EnterPasswordViewModel @Inject constructor(private val apiClient: APIClien
         apiClient.loginRequest(loginRequestData).observeForever(Observer { response ->
             if (response is ApiSuccessResponse) {
                 val test = true
-            }
-
-            else if (response is ApiErrorResponse) {
+            } else if (response is ApiErrorResponse) {
                 val test = false
             }
         })
