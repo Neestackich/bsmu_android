@@ -1,4 +1,4 @@
-package com.example.bsmuschedule.ui.enterLogin.view
+package com.example.bsmuschedule.ui.enterEmail.view
 
 import android.content.Context
 import android.content.Intent
@@ -8,18 +8,18 @@ import android.view.inputmethod.InputMethodManager
 import androidx.core.widget.doAfterTextChanged
 
 import com.example.bsmuschedule.base.BaseActivity
-import com.example.bsmuschedule.databinding.EnterLoginBinding
-import com.example.bsmuschedule.ui.enterLogin.viewModel.EnterLoginViewModel
+import com.example.bsmuschedule.databinding.EnterEmailBinding
+import com.example.bsmuschedule.ui.enterEmail.viewModel.EnterLoginViewModel
 import com.example.bsmuschedule.ui.enterPassword.view.EnterPasswordActivity
 import com.example.bsmuschedule.utils.networking.requestData.LoginRequest
 import com.example.bsmuschedule.utils.observer.SingleEvent
 import com.example.bsmuschedule.utils.observer.observe
 import com.example.bsmuschedule.utils.observer.observeEvent
 
-class EnterLoginActivity : BaseActivity() {
+class EnterEmailActivity : BaseActivity() {
 
     private val viewModel: EnterLoginViewModel by viewModels()
-    private lateinit var binding: EnterLoginBinding
+    private lateinit var binding: EnterEmailBinding
 
     private class Constants {
         companion object {
@@ -34,7 +34,7 @@ class EnterLoginActivity : BaseActivity() {
     }
 
     override fun initViewBinding() {
-        binding = EnterLoginBinding.inflate(layoutInflater)
+        binding = EnterEmailBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
     }

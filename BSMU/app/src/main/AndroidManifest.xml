@@ -15,7 +15,7 @@
             android:name=".ui.enterPassword.view.EnterPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.enterLogin.view.EnterLoginActivity"
+            android:name=".ui.enterEmail.view.EnterEmailActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

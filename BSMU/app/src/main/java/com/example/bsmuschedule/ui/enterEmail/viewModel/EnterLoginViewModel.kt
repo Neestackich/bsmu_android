@@ -1,4 +1,4 @@
-package com.example.bsmuschedule.ui.enterLogin.viewModel
+package com.example.bsmuschedule.ui.enterEmail.viewModel
 
 import android.text.Editable
 import androidx.lifecycle.LiveData
